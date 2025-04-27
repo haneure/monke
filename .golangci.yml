@@ -1,0 +1,21 @@
+linters:
+  enable:
+    - gofumpt
+    - golint
+    - errcheck
+    - staticcheck
+    - unused
+    - govet
+    - gocritic
+    - gosec
+
+run:
+  timeout: 5m
+  # Automatically fix issues with `gofumpt`
+  fix: true
+  # Run the linter on all files
+  tests: false
+
+# Path to the gofumpt binary
+gofumpt:
+  bin: gofumpt
